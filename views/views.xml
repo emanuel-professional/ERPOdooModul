@@ -1,0 +1,59 @@
+<openerp>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="videoclub.list">
+      <field name="name">videoclub list</field>
+      <field name="model">videoclub.videoclub</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="videoclub.action_window">
+      <field name="name">videoclub window</field>
+      <field name="res_model">videoclub.videoclub</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="videoclub.action_server">
+      <field name="name">videoclub server</field>
+      <field name="model_id" ref="model_videoclub_videoclub"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="videoclub" id="videoclub.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="videoclub.menu_1" parent="videoclub.menu_root"/>
+    <menuitem name="Menu 2" id="videoclub.menu_2" parent="videoclub.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="videoclub.menu_1_list" parent="videoclub.menu_1"
+              action="videoclub.action_window"/>
+    <menuitem name="Server to list" id="videoclub" parent="videoclub.menu_2"
+              action="videoclub.action_server"/>
+    -->
+  </data>
+</openerp>
